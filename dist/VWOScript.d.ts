@@ -21,6 +21,7 @@ interface VWOScriptProps {
     hideElement?: string;
     hideElementStyle?: string;
     scriptAttributes?: React.ScriptHTMLAttributes<HTMLScriptElement>;
+    linkAttributes?: React.LinkHTMLAttributes<HTMLLinkElement>;
 }
 export declare const VWOScript: React.FC<VWOScriptProps>;
 export {};

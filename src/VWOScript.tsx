@@ -23,6 +23,7 @@ interface VWOScriptProps {
   hideElement?: string;
   hideElementStyle?: string;
   scriptAttributes?: React.ScriptHTMLAttributes<HTMLScriptElement>;
+  linkAttributes?: React.LinkHTMLAttributes<HTMLLinkElement>;
 }
 
 export const VWOScript: React.FC<VWOScriptProps> = ({
@@ -32,6 +33,7 @@ export const VWOScript: React.FC<VWOScriptProps> = ({
   hideElement = 'body',
   hideElementStyle = 'opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important',
   scriptAttributes = {},
+  linkAttributes = {},
 }) => {
   try {
     const scriptType = typeof type === 'string' ? type.toLowerCase() : 'async';
@@ -60,7 +62,11 @@ export const VWOScript: React.FC<VWOScriptProps> = ({
 
     return (
       <>
-        <link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com" />
+        <link
+          rel="preconnect"
+          href="https://dev.visualwebsiteoptimizer.com"
+          {...linkAttributes}
+        />
         <script
           {...scriptAttributes}
           type="text/javascript"
