@@ -15,6 +15,7 @@
  */
 
 import React from 'react';
+import Script from 'next/script';
 
 interface VWOScriptProps {
   accountId: string;
@@ -67,7 +68,7 @@ export const VWOScript: React.FC<VWOScriptProps> = ({
           href="https://dev.visualwebsiteoptimizer.com"
           {...linkAttributes}
         />
-        <script
+        <Script
           {...scriptAttributes}
           type="text/javascript"
           id="vwoCode"
