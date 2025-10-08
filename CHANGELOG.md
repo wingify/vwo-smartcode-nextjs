@@ -7,14 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-### Changed
+### Added
 
-- Updated VWO SmartCode from version 2.1 to version 2.2
-- Enhanced cookie handling with support for combination, combinationChoose, split, exclude, uuid, consent, and optOut cookies
-- Improved query parameter generation with visitor and session ID detection
-- Updated default `hideElementStyle` to include white background and transition properties
-- Removed deprecated `getSettings` functionality from load function
-- Enhanced performance tracking with server timing parameter
+- Optimized performance with faster execution and reduced impact on Core Web Vitals (FCP & LCP) by offloading variation         decisioning to VWO's servers.
+- Introducing support for running tests directly through Cloudflare Workers, providing seamless and instant changes.(Coming soon)
 
 ## [1.3.0] - 2025-04-11
 
