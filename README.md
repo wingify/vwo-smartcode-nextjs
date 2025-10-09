@@ -91,7 +91,8 @@ The `VWOScript` component accepts the following props:
 | `type`             | `'ASYNC' \| 'SYNC'`      | No       | `'ASYNC'`                                                                              | Type of VWO script loading                          |
 | `settingsTimeout`  | `number`                 | No       | `2000`                                                                                 | Timeout for settings initialization                 |
 | `hideElement`      | `string`                 | No       | `'body'`                                                                               | CSS selector for the element to be hidden           |
-| `hideElementStyle` | `string`                 | No       | `'opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important'` | CSS styles applied to the hidden element            |
+| `hideElementStyle` | `string`                 | No       | `'opacity:0 !important;filter:alpha(opacity=0) !important;background:white !important;transition:none !important;'` | CSS styles applied to the hidden element            |
+| `backgroundColor`  | `string`                 | No       | `'white'`                                                                              | Background color used when hiding body element      |
 | `scriptAttributes` | `Record<string, string>` | No       | `{}`                                                                                   | Additional attributes to be added to the script tag. Note: `id` will be overridden and `referrerPolicy` will be overridden in case of `SYNC` SmartCode |
 | `linkAttributes`   | `Record<string, string>` | No       | `{}`                                                                                   | Additional attributes to be added to the link tag.  |
 
