@@ -32,8 +32,8 @@ export const VWOScript: React.FC<VWOScriptProps> = ({
   type = 'ASYNC',
   settingsTimeout = 2000,
   hideElement = 'body',
-  hideElementStyle = 'opacity:0 !important;filter:alpha(opacity=0) !important;background:white !important;transition:none !important;',
   backgroundColor = 'white',
+  hideElementStyle = `opacity:0 !important;filter:alpha(opacity=0) !important;background:${backgroundColor} !important;transition:none !important;`,
   scriptAttributes = {},
   linkAttributes = {},
 }) => {
