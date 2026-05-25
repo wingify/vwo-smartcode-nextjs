@@ -1,6 +1,6 @@
 {
   "name": "vwo-smartcode-nextjs",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "A Next.js component for VWO SmartCode integration",
   "main": "dist/VWOScript.min.js",
   "scripts": {
