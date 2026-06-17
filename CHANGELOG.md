@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- Fixed SmartCode 3.0 localStorage config merge so stored `_wingify_*_config` values correctly override component defaults
+- Fixed SmartCode 3.0 localStorage config merge so stored `_vwo_*_config` values correctly override component defaults
 
 ## [1.4.0] - 2025-10-09
 
