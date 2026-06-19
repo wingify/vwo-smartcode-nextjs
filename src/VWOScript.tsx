@@ -15,6 +15,7 @@
  */
 
 import React from 'react';
+import Script from 'next/script';
 
 const DEFAULT_VWO_SMARTCODE_VERSION = 2.2;
 
@@ -90,7 +91,7 @@ export const VWOScript: React.FC<VWOScriptProps> = ({
           href="https://dev.visualwebsiteoptimizer.com"
           {...linkAttributes}
         />
-        <script
+        <Script
           {...scriptAttributes}
           type="text/javascript"
           id="vwoCode"
