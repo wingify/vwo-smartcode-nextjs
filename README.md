@@ -81,6 +81,13 @@ To add a nonce attribute for Content Security Policy:
 />
 ```
 
+### Using SmartCode 3.0
+
+```tsx
+// Only use version="3.0" if SmartCode 3.0 is enabled for your VWO account
+<VWOScript accountId="YOUR_ACCOUNT_ID" version="3.0" />
+```
+
 ## Props
 
 The `VWOScript` component accepts the following props:
