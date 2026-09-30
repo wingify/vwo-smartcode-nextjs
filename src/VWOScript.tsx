@@ -25,6 +25,11 @@ const isValidVwoSmartCodeVersion = (
 
 interface VWOScriptProps {
   accountId: string;
+  /**
+   * SmartCode version to load. Defaults to `2.2`.
+   *
+   * See the {@link https://www.npmjs.com/package/vwo-smartcode-nextjs#warning warning} before using `3.0`.
+   */
   version?: 2.2 | 3.0;
   type?: 'ASYNC' | 'SYNC';
   settingsTimeout?: number;

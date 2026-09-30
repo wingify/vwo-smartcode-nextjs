@@ -88,7 +88,7 @@ The `VWOScript` component accepts the following props:
 | Prop               | Type                     | Required | Default                                                                                | Description                                         |
 | ------------------ | ------------------------ | -------- | -------------------------------------------------------------------------------------- | --------------------------------------------------- |
 | `accountId`        | `string`                 | ✅ Yes   | `null`                                                                                 | Your VWO account ID                                 |
-| `version`          | `2.2 \| 3.0`             | No       | `2.2`                                                                                  | SmartCode version to load                           |
+| `version`          | `2.2 \| 3.0`             | No       | `2.2`                                                                                  | SmartCode version to load. Check the [Warning](#warning) below before using `3.0`. |
 | `type`             | `'ASYNC' \| 'SYNC'`      | No       | `'ASYNC'` for version `2.2`, `'SYNC'` for version `3.0`                                | Type of VWO script loading                          |
 | `settingsTimeout`  | `number`                 | No       | `2000`                                                                                 | Timeout for settings initialization                 |
 | `hideElement`      | `string`                 | No       | `'body'`                                                                               | CSS selector for the element to be hidden           |
@@ -97,7 +97,9 @@ The `VWOScript` component accepts the following props:
 | `scriptAttributes` | `Record<string, string>` | No       | `{}`                                                                                   | Additional attributes to be added to the script tag. Note: `id` will be overridden and `referrerPolicy` will be overridden in case of `SYNC` SmartCode |
 | `linkAttributes`   | `Record<string, string>` | No       | `{}`                                                                                   | Additional attributes to be added to the link tag.  |
 
-> **Warning:** SmartCode version `3.0` will only work if it is enabled and reflected on your VWO dashboard. If you do not see version `3.0` in your dashboard, please contact your CSM or VWO Support to have it enabled.
+#### Warning
+
+> Use SmartCode version `3.0` only when it is enabled for your VWO account. If `3.0` is not enabled for that account, do not set `version={3.0}`. It will not load. Confirm `3.0` is shown in your VWO dashboard before using it. If it is not shown, contact your CSM or VWO Support to have it enabled, and keep the default version `2.2` until then.
 
 ## Authors
 
