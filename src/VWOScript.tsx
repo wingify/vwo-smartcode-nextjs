@@ -28,8 +28,7 @@ interface VWOScriptProps {
   /**
    * SmartCode version to load. Defaults to `2.2`.
    *
-   * Use `3.0` only when SmartCode 3.0 is enabled for this VWO account.
-   * If it is not enabled for the account, do not pass `3.0`. It will not load.
+   * See the {@link https://www.npmjs.com/package/vwo-smartcode-nextjs#warning warning} before using `3.0`.
    */
   version?: 2.2 | 3.0;
   type?: 'ASYNC' | 'SYNC';

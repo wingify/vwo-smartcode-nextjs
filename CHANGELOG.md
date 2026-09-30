@@ -7,9 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-### Changed
+### Added
 
-- Documented that SmartCode `3.0` can be used only when it is enabled for the account. If it is not enabled, keep version `2.2`.
+- Added warning for `3.0` SmartCode version usage.
 
 ## [1.5.0] - 2026-08-11
 

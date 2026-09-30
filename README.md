@@ -81,14 +81,6 @@ To add a nonce attribute for Content Security Policy:
 />
 ```
 
-### Using SmartCode 3.0
-
-Only use `version="3.0"` if SmartCode 3.0 is enabled for your VWO account. See the [Warning](#smartcode-30-warning) below before using it.
-
-```tsx
-<VWOScript accountId="YOUR_ACCOUNT_ID" version="3.0" />
-```
-
 ## Props
 
 The `VWOScript` component accepts the following props:
@@ -105,9 +97,9 @@ The `VWOScript` component accepts the following props:
 | `scriptAttributes` | `Record<string, string>` | No       | `{}`                                                                                   | Additional attributes to be added to the script tag. Note: `id` will be overridden and `referrerPolicy` will be overridden in case of `SYNC` SmartCode |
 | `linkAttributes`   | `Record<string, string>` | No       | `{}`                                                                                   | Additional attributes to be added to the link tag.  |
 
-<a id="smartcode-30-warning"></a>
+#### Warning
 
-> **Warning:** Use SmartCode version `3.0` only when it is enabled for your VWO account. If `3.0` is not enabled for that account, do not set `version={3.0}`. It will not load. Confirm `3.0` is shown in your VWO dashboard before using it. If it is not shown, contact your CSM or VWO Support to have it enabled, and keep the default version `2.2` until then.
+> Use SmartCode version `3.0` only when it is enabled for your VWO account. If `3.0` is not enabled for that account, do not set `version={3.0}`. It will not load. Confirm `3.0` is shown in your VWO dashboard before using it. If it is not shown, contact your CSM or VWO Support to have it enabled, and keep the default version `2.2` until then.
 
 ## Authors
 
