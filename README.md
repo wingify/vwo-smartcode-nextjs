@@ -88,7 +88,7 @@ The `VWOScript` component accepts the following props:
 | Prop               | Type                     | Required | Default                                                                                | Description                                         |
 | ------------------ | ------------------------ | -------- | -------------------------------------------------------------------------------------- | --------------------------------------------------- |
 | `accountId`        | `string`                 | ✅ Yes   | `null`                                                                                 | Your VWO account ID                                 |
-| `version`          | `2.2 \| 3.0`             | No       | `2.2`                                                                                  | SmartCode version to load. Use `3.0` only when it is enabled for this account. |
+| `version`          | `2.2 \| 3.0`             | No       | `2.2`                                                                                  | SmartCode version to load. Check the [Warning](#warning) below before using `3.0`. |
 | `type`             | `'ASYNC' \| 'SYNC'`      | No       | `'ASYNC'` for version `2.2`, `'SYNC'` for version `3.0`                                | Type of VWO script loading                          |
 | `settingsTimeout`  | `number`                 | No       | `2000`                                                                                 | Timeout for settings initialization                 |
 | `hideElement`      | `string`                 | No       | `'body'`                                                                               | CSS selector for the element to be hidden           |
