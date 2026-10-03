@@ -15,6 +15,7 @@
  */
 
 import React from 'react';
+import Script from 'next/script';
 import { buildSmartCode } from './smartCode.generated';
 
 const DEFAULT_VWO_SMARTCODE_VERSION = 2.2;
@@ -84,7 +85,7 @@ export const VWOScript: React.FC<VWOScriptProps> = ({
           : `https://dev.visualwebsiteoptimizer.com/lib/${accountId}.js`;
 
       return (
-        <script
+        <Script
           {...scriptAttributes}
           referrerPolicy="no-referrer-when-downgrade"
           id="vwoCode"
@@ -100,10 +101,11 @@ export const VWOScript: React.FC<VWOScriptProps> = ({
           href="https://dev.visualwebsiteoptimizer.com"
           {...linkAttributes}
         />
-        <script
+        <Script
           {...scriptAttributes}
           type="text/javascript"
           id="vwoCode"
+          strategy="beforeInteractive"
           dangerouslySetInnerHTML={{ __html: smartCode }}
         />
       </>
